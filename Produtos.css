@@ -1,0 +1,24 @@
+header {
+    background: #BBBBBB;
+    /*cor de fundo cinza apenas no headr*/
+}
+
+nav li {
+    display: inline;
+    /*colocar os intens em linha*/
+    margin: 0 0 0 15px;
+    /*colocar um espaçamento entre os itens a esqueda*/
+}
+
+nav a {
+    text-transform: uppercase;
+    /*colcar o texto em Maiusco*/
+    color: #000000;
+    /*cor do texto*/
+    font-weight: bold;
+    /*fonte negrito*/
+    font-size: 22px;
+    /*tamanho da fonte*/
+    text-decoration: none;
+    /*tira toda formatação do texto*/
+}
