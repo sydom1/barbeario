@@ -1,48 +1,152 @@
-#banner {
-	width:100%;
+header {
+    background: #BBBBBB;
+    /*cor de fundo cinza apenas no headr*/
+    padding: 20px 0;
+    /*para deixar o espaçamento do menu e imagem perfeitos p o site*/
 }
 
-.principal{
-	background: #CCCCCC;
-	padding: 30px;
+.caixa {
+    width: 940px;
+    /*margem padrão web*/
+    position: relative;
+    /*foi usado para trazer o navegardo para a margem do width da caixa*/
+    margin: 0 auto;
+    /*para cima e baixo zero de margem, e o auto serve para o calculo ser feito automatico da direita e esqueda, centraliza automatico*/
 }
 
-.titulo-principal {
-	padding-left: 20px;
+nav {
+    position: absolute;
+    /*a posição absoluta server para deixar a objeto solto sempre usar para posicionar algo*/
+    top: 110px;
+    right: 0;
 }
 
-.titulo-centralizado {
-	text-align: center
+nav li {
+    display: inline;
+    /*colocar os intens em linha*/
+    margin: 0 0 0 15px;
+    /*colocar um espaçamento entre os itens a esqueda*/
 }
 
-p {
-	text-align: center;
+nav a {
+    text-transform: uppercase;
+    /*colcar o texto em Maiusco*/
+    color: #000000;
+    /*cor do texto*/
+    font-weight: bold;
+    /*fonte negrito*/
+    font-size: 22px;
+    /*tamanho da fonte*/
+    text-decoration: none;
+    /*tira toda formatação do texto*/
 }
 
-#missao {
-	font-size: 20px
+nav a:hover {
+    /*hover e pra adicionar comportamento quando o mouse estiver em cima do item*/
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-em strong {
-	color: #FF0000;
+.produtos {
+    width: 940px;
+    /*margem padrão web*/
+    margin: 0 auto;
+    /*para cima e baixo zero de margem, e o auto serve para o calculo ser feito automatico da direita e esqueda, centraliza automatico*/
+    padding: 50px 0;
+    /*aumentado a distancia para cima e para baixo*/
 }
 
-.itens {
-	font-style: italic
+.produtos li {
+    display: inline-block;
+    /*colocando os itens ao lado um do outro*/
+    text-align: center;
+    /*centralizar os itens*/
+    width: 30%;
+    /*para deixar os itens com 30% de espaço kda*/
+    vertical-align: top;
+    /*alinhar pela parte de cima, ficar todos na mesma linha mais alinhando pelo item superior*/
+    margin: 0 1.5%;
+    /*espaçamento lateral, espaçamento externo*/
+    padding: 30px 20px;
+    /*espaçamento interno*/
+    box-sizing: border-box;
+    /*para não deixar que os espaçamentos se somem, que o intem trabalhe com o espaçamento definido*/
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
+.produtos li:hover {
+    /*hover e pra adicionar comportamento quando o mouse estiver em cima do item*/
+    border-color: #C78C19;
 }
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+.produtos li:active {
+    /*adicionando quando o o item for clicado*/
+    border-color: #088c19;
 }
 
-.imagembeneficios {
-	width: 50%;
+.produtos li:hover h2 {
+    /*para mudar o elemento h2*/
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    /*tamanho da fonte*/
+    font-weight: bold;
+    /*peso da fonte negrito*/
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    /*tamanho da fonte*/
+    font-weight: bold;
+    /*peso da fonte negrito*/
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px 0 0;
+}
+
+
+/*pagina de contato*/
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form p {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
 }
