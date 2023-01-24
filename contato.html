@@ -29,43 +29,73 @@
     <main>
         <form>
             <label for="nomeSobrenome">Nome e sobrenome</label>
-            <input type="text" id="nomeSobrenome" class="input-padrao">
+            <input type="text" id="nomeSobrenome" class="input-padrao" required>
+            <!--required e para tornar o campo obrigatorio para preenchimento-->
 
             <label for="email">Email</label>
-            <input type="text" id="email" class="input-padrao">
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" class="input-padrao">
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
 
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
-
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Digite seu texto"></textarea>
+            <!--Placeholder e para colocar uma forma no tipo do input-->
             <!--o nome contato nas radios server para conseguir marcar apenas um item-->
-            <div>
-                <p>Como prefere o nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
                 <label><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
 
                 <label><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 
 
-                <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+                <label><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                <!--checked e para deixar essa opção como padrão inicial-->
+            </fieldset>
 
-            </div>
-
-            <div>
-                <p>Qual o horário prefere ser atendido?</p>
+            <fieldset>
+                <legend>Qual o horário prefere ser atendido?</legend>
                 <select>
                 <option>Manhã</option>
                 <option>Tarde</option>
                 <option>Noite</option>
             </select>
-            </div>
+            </fieldset>
 
-            <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
-            <input type="submit" value="Enviar formulário">
+            <input type="submit" value="Enviar formulário" class="enviar">
         </form>
+
+        <!--Tabela-->
+        <table>
+            <thead>
+                <!-- thead serve para definir o titulo da tabela e usamos th 
+        ao inves de td-->
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--tbody serve para definiro o corpo da tabela-->
+                <!--colspan="numero de celulas", usado para agrupar celular com uma
+            unica informação-->
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <img src="logo-branco.png" alt="logo">

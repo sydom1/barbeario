@@ -134,7 +134,7 @@ form {
 }
 
 form label,
-form p {
+form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -149,4 +149,93 @@ form p {
 
 .checkbox {
     margin: 20px 0;
+}
+
+
+/*Botão enviar*/
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    /*sempre informar o que sera utilizado na transição, all são todos as
+     configurações se usar o background so iria mudar o fundo*/
+    /*para fazer a transição*/
+    cursor: pointer;
+    /*o tipo do cursor*/
+}
+
+.enviar:hover {
+    background: rgb(255, 94, 0);
+    /*para fazer a transição*/
+    transform: scale(1.2);
+    /*para aumentar o tamanho do botão*/
+    /* transform: rotate(20deg); da o efeito de rotação, para colocar
+     mais um transform e socolocar em ordem transform: rotate(20deg), scale(1.2);*/
+}
+
+
+/*tabela*/
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+/*estilização da home-page*/
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    /*o tipo "em" e utilizado quando querendo deixar o tamanho proporcionalo ao pixel
+    nesse caso 2em significa que a fonte tera o dobro do tamnho do pixel das outras fontes*/
+    margin: 0 0 1em;
+    clear: left;
+    /*pra colocar a imagem antes do texto de forma alinhada usado junto com o float dos
+    utensilios*/
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    /*pra colocar a imagem antes do texto de forma alinhada*/
+    margin: 0 20px 20px 0;
+}
+
+.imagembeneficios {
+    width: 60%;
 }

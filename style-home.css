@@ -2,6 +2,13 @@
     width: 100%;
 }
 
+header {
+    background: #BBBBBB;
+    /*cor de fundo cinza apenas no headr*/
+    padding: 5px 0;
+    /*para deixar o espaçamento do menu e imagem perfeitos p o site*/
+}
+
 h1 {
     font-size: 30px;
     font-weight: bold;
@@ -20,7 +27,7 @@ h1 {
 nav {
     position: absolute;
     /*a posição absoluta server para deixar a objeto solto sempre usar para posicionar algo*/
-    top: 110px;
+    top: 20px;
     right: 0;
 }
 
